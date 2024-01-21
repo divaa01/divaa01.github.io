@@ -2,7 +2,7 @@
 title: "Analisis Pengaruh Ekspor Terhadap PDRB di Provinsi Aceh"
 subtitle: "Metode Penelitian Politeknik APP Jakarta"
 author: "Diva Indah Kinanti"
-date: 2022-08-10
+date: 2024-01-18
 number-sections: true
 format:
   html: default
