@@ -1,0 +1,155 @@
+---
+title: "Analisis Pengaruh Ekspor Terhadap PDRB di Provinsi Aceh"
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Diva Indah Kinanti"
+date: 2022-08-10
+number-sections: true
+format:
+  html: default
+  docx: default
+---
+
+![](poltekapp.jpg)
+
+
+## Pendahuluan
+
+### Latar Belakang
+Pertumbuhan ekonomi suatu daerah sering kali diukur dengan indikator Produk Domestik Regional Bruto (PDRB). Ekspor, sebagai salah satu komponen perdagangan internasional, dapat memainkan peran penting dalam menggerakkan pertumbuhan ekonomi. Provinsi Aceh, sebagai bagian integral dari Indonesia, memiliki potensi sumber daya alam dan sektor ekonomi yang dapat mendukung pengembangan ekspor. Oleh karena itu, penting untuk melakukan analisis mengenai pengaruh ekspor terhadap PDRB di Provinsi Aceh guna memberikan pemahaman yang lebih mendalam terkait dinamika ekonomi daerah tersebut.
+
+### Ruang Lingkup
+
+Penelitian ini akan fokus pada analisis hubungan antara ekspor dan PDRB di Provinsi Aceh. Ruang lingkup penelitian mencakup pemahaman tentang seberapa besar kontribusi ekspor terhadap pertumbuhan ekonomi daerah tersebut. Analisis akan dilakukan dengan menggunakan metode regresi untuk mengukur sejauh mana variabilitas PDRB dapat dijelaskan oleh variabel ekspor. Data yang digunakan dalam penelitian ini melibatkan data ekspor dan PDRB Provinsi Aceh selama periode tertentu.
+
+### Rumusan Masalah
+
+Berdasarkan latar belakang dan ruang lingkup di atas, rumusan masalah penelitian ini adalah:
+
+Seberapa besar pengaruh ekspor terhadap pertumbuhan PDRB di Provinsi Aceh?
+Apakah terdapat hubungan positif antara ekspor dan PDRB di Provinsi Aceh?
+Bagaimana dinamika pengaruh tersebut dalam periode waktu tertentu?
+
+### Tujuan dan Manfaat Penelitian
+
+Tujuan dari penelitian ini adalah:
+
+Untuk menganalisis sejauh mana ekspor berkontribusi terhadap pertumbuhan ekonomi, diukur dengan PDRB, di Provinsi Aceh. Mengevaluasi apakah terdapat hubungan positif antara ekspor dan PDRB di Provinsi Aceh. Mmahami dinamika dan pola pengaruh ekspor terhadap PDRB dalam rentang waktu tertentu.
+
+### Package
+
+```{r}
+#| warning: false
+#| echo: true
+library(tidyverse)
+library(readxl)
+library("ggplot2")
+library("dplyr")
+```
+
+
+### Studi Pustaka
+
+Studi pustaka akan mencakup tinjauan literatur terkait konsep ekspor, PDRB, dan hubungan antara keduanya. Beberapa penelitian terdahulu yang telah dilakukan mengenai dinamika ekonomi regional, terutama di Indonesia, akan menjadi landasan teoritis untuk menjelaskan hubungan antara ekspor dan pertumbuhan ekonomi. Selain itu, literatur terkait faktor-faktor eksternal yang memengaruhi ekspor dan PDRB juga akan diintegrasikan untuk memberikan pandangan komprehensif dalam konteks Provinsi Aceh.
+
+Penelitian ekonomi internasional telah mengemukakan berbagai teori yang menjelaskan hubungan antara ekspor dan pertumbuhan ekonomi. Teori-teori seperti Teori Heckscher-Ohlin, Model Solow, dan Model Pertumbuhan Endogen memberikan landasan konseptual untuk memahami bagaimana kegiatan ekspor dapat memengaruhi perkembangan ekonomi suatu wilayah. Faktor-faktor yang memengaruhi kinerja ekspor suatu daerah merupakan aspek penting dalam memahami dinamika perdagangan internasional. Faktor-faktor seperti kebijakan perdagangan, stabilitas politik, infrastruktur, dan inovasi teknologi memainkan peran kunci dalam menentukan tingkat keberhasilan ekspor suatu wilayah.
+
+### Metode Penelitian 
+
+### Data
+
+| Tahun    |  Ekspor (X) ||  PDRB (Y)   |
+|----------|-------------||-------------|
+|    2016  | 56.069.045  || 87.615.142  |
+|    2017  | 146.735.786 || 93.353.828  |
+|    2018  | 250.735.059 || 99.822.797  |
+|    2019  | 317.684.911 || 105.109.395 |
+|    2020  | 300.421. 290|| 100.524.146 |
+
+
+Data yang digunakan sebagai fokus penelitian adalah data ekspor dan PDRB Provinsi Aceh, diukur dalam satuan USD (Dolar Amerika). Data ini memberikan gambaran mengenai nilai ekspor dan Produk Domestik Regional Bruto (PDRB) dalam mata uang internasional, yang relevan untuk mengevaluasi kinerja ekonomi Provinsi Aceh.
+
+```{r}
+library("readxl")
+dat<-read_excel("Aceh.xlsx")
+head(dat)
+```
+
+
+```{r}
+library("ggplot2")
+library("dplyr")
+ggplot(data=dat,aes(x=Ekspor,y=PDRB))+
+  geom_point(color="purple",size=2)+
+  labs(title="Tabel Pengaruh Ekspor Terhadap PDRB",
+       x="Ekspor",
+       y="PDRB",
+ caption="sumber:Badan Pusat Statistik")+
+     theme_classic()
+```
+
+### Metode Analisis
+
+Data yang digunakan sebagai fokus penelitian adalah data ekspor dan PDRB Provinsi Aceh, diukur dalam satuan USD (Dolar Amerika). Data ini memberikan gambaran mengenai nilai ekspor dan Produk Domestik Regional Bruto (PDRB) dalam mata uang internasional, yang relevan untuk mengevaluasi kinerja ekonomi Provinsi Aceh
+
+$$
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+$$ di mana $y_t$ adalah PDRB dan $x_t$ adalah Ekspor.'
+
+
+Dalam penelitian ini, metode analisis yang digunakan adalah regresi univariat atau Ordinary Least Square (OLS) dengan satu variabel independen. Tujuan penelitian adalah untuk mengevaluasi hubungan antara Ekspor (variabel X) dan PDRB Produk Domestik Regional Bruto ( variabel Y) di Provinsi Aceh. Analisis dilakukan dengan memanfaatkan model regresi linier sederhana untuk menentukan sejauh mana PDRB dapat menjelaskan variasi dalam nilai Ekspor. Metode ini bertujuan untuk mengidentifikasi dan mengukur pengaruh PDRB terhadap Ekspor serta memprediksi nilai Ekspor berdasarkan perubahan dalam PDRB.
+
+### Pembahasan
+
+### Pembahasan Masalah
+Analisis regresi yang Anda lakukan bertujuan untuk mengevaluasi pengaruh PDRB terhadap ekspor di Provinsi Aceh. Dalam konteks ini, terdapat beberapa poin penting yang dapat dibahas:
+
+1.Intercept 
+   - Nilai intercept adalah -1.333e+09. Ini adalah nilai Ekspor ketika PDRB sama  
+   dengan nol.
+   - Interpretasi: Ketika PDRB di Provinsi Aceh nol, nilai Ekspor diperkirakan    
+   mencapai -1.333e+09.
+
+2. Koefisien PDRB 
+   - Koefisien PDRB adalah 1.590e+01. Ini menunjukkan perubahan dalam Ekspor yang          diharapkan untuk setiap satuan perubahan dalam PDRB.
+   - Interpretasi: Untuk setiap satu unit kenaikan PDRB, Ekspor diperkirakan akan 
+   meningkat sebesar 15.90.
+
+3. P-value
+   - P-value untuk koefisien PDRB adalah 0.00277. P-value ini kurang dari tingkat          signifikansi umum (0.05).
+   - Interpretasi: P-value yang rendah menunjukkan bahwa terdapat bukti yang cukup
+   untuk menolak hipotesis nol, yang berarti bahwa PDRB memiliki pengaruh signifikan
+   terhadap Ekspor.
+
+4. R-squared dan Adjusted R-squared
+   - R-squared adalah 0.9653, sedangkan Adjusted R-squared adalah 0.9537.
+   - Interpretasi: R-squared menyatakan bahwa sekitar 96.53% variabilitas dalam 
+   variabel respons (Ekspor) dapat dijelaskan oleh variabel prediktor (PDRB) dalam      model ini. Adjusted R-squared memperhitungkan jumlah variabel prediktor dan dapat    memberikan gambaran yang lebih akurat tentang sejauh mana model dapat menjelaskan variasi.
+
+5. F-statistic dan P-value F-statistic
+   - F-statistic adalah 83.46 dan P-value untuk F-statistic adalah 0.002772.
+   - Interpretasi: F-statistic digunakan untuk menguji signifikansi keseluruhan model.P-value yang rendah menunjukkan bahwa model regresi secara keseluruhan      Signifikan. Dengan kata lain, terdapat cukup bukti untuk menyatakan bahwa         setidaknya satu variabel prediktor memiliki pengaruh signifikan terhadap variabel   respons.
+   
+### Analisis Pembahasan
+
+Hasil regresi nya adalah :
+
+```{r}
+reg1<-lm(Ekspor~PDRB,data=dat)
+summary(reg1)
+```
+
+Berdasarkan analisis regresi linier yang dilakukan, ditemukan bahwa terdapat hubungan yang signifikan antara Produk Domestik Regional Bruto (PDRB) dan Ekspor di Provinsi Aceh. Hasil regresi menunjukkan bahwa intercept (nilai Ekspor ketika PDRB sama dengan nol) sebesar -1.333e+09, dan koefisien PDRB adalah 15.90. P-value untuk koefisien PDRB adalah 0.00277, yang lebih kecil dari tingkat signifikansi 0.05, menunjukkan bahwa PDRB memiliki pengaruh signifikan terhadap Ekspor. Dengan R-squared sebesar 0.9653 dan Adjusted R-squared sebesar 0.9537, model regresi mampu menjelaskan sekitar 96.53% variabilitas dalam variabel Ekspor. F-statistic yang signifikan (83.46, p-value: 0.002772) mengindikasikan bahwa model secara keseluruhan memberikan kontribusi yang signifikan terhadap menjelaskan variasi Ekspor.
+
+### Kesimpulan
+
+Kesimpulan umum dari analisis regresi menunjukkan bahwa terdapat hubungan yang signifikan antara variabel ekspor dan PDRB di Provinsi Aceh. Pengaruh signifikan ini dapat dilihat dari koefisien regresi PDRB yang positif sebesar 15.90 dan p-value yang rendah (0.00277). Koefisien positif menandakan bahwa adanya kenaikan dalam PDRB Provinsi Aceh berdampak positif terhadap ekspor, dan hasil uji statistik memberikan keyakinan bahwa hubungan ini bukanlah kebetulan semata.
+
+Seberapa besar pengaruh ekspor terhadap PDRB dapat diukur dari koefisien regresi PDRB sebesar 15.90. Artinya, setiap satu unit peningkatan dalam PDRB di Provinsi Aceh diikuti oleh peningkatan sekitar 15.90 unit dalam ekspor. Selain itu, R-squared sebesar 0.9653 menunjukkan bahwa sekitar 96.53% variasi PDRB dapat dijelaskan oleh variabilitas ekspor dalam model ini. Hal ini mengindikasikan bahwa model regresi dengan variabel PDRB mampu dengan baik menjelaskan fluktuasi ekspor di Provinsi Aceh.
+
+Dalam konteks hubungan positif antara ekspor dan pertumbuhan PDRB, koefisien positif pada variabel PDRB menggambarkan bahwa, secara umum, ketika PDRB meningkat, ekspor juga cenderung meningkat, dan sebaliknya. Dengan kata lain, pertumbuhan ekonomi, yang tercermin dalam PDRB, beriringan dengan peningkatan dalam aktivitas ekspor di Provinsi Aceh. Keseluruhan, hasil analisis regresi memberikan landasan yang kuat untuk menyimpulkan bahwa ekspor memiliki peran yang signifikan dalam memengaruhi pertumbuhan ekonomi di wilayah tersebut.
+
+### Referensi
+
+Prishardoyo, B. (2008). Analisis Tingkat Pertumbuhan Ekonomi dan Potensi Ekonomi Terhadap Produk Domestik Regional Bruto (PDRB) Kabupaten Pati Tahun 2000-2005. Jejak, 1(1).
+
+Afriamah, A., Lubis, Z., & Lubis, M. M. (2021). Faktor-faktor yang Mempengaruhi Volume Ekspor Kopi dari Kabupaten Aceh Tengah ke Amerika Serikat. Jurnal Agriuma, 3(1), 1-8.

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Diva Indah Kinanti">
+<meta name="dcterms.date" content="2022-08-10">
+
+<title>Analisis Pengaruh Ekspor Terhadap PDRB di Provinsi Aceh</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Analisis Pengaruh Ekspor Terhadap PDRB di Provinsi Aceh</h1>
+<p class="subtitle lead">Metode Penelitian Politeknik APP Jakarta</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Diva Indah Kinanti </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 10, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="poltekapp.jpg" class="img-fluid"></p>
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar Belakang</h3>
+<p>Pertumbuhan ekonomi suatu daerah sering kali diukur dengan indikator Produk Domestik Regional Bruto (PDRB). Ekspor, sebagai salah satu komponen perdagangan internasional, dapat memainkan peran penting dalam menggerakkan pertumbuhan ekonomi. Provinsi Aceh, sebagai bagian integral dari Indonesia, memiliki potensi sumber daya alam dan sektor ekonomi yang dapat mendukung pengembangan ekspor. Oleh karena itu, penting untuk melakukan analisis mengenai pengaruh ekspor terhadap PDRB di Provinsi Aceh guna memberikan pemahaman yang lebih mendalam terkait dinamika ekonomi daerah tersebut.</p>
+</section>
+<section id="ruang-lingkup" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang Lingkup</h3>
+<p>Penelitian ini akan fokus pada analisis hubungan antara ekspor dan PDRB di Provinsi Aceh. Ruang lingkup penelitian mencakup pemahaman tentang seberapa besar kontribusi ekspor terhadap pertumbuhan ekonomi daerah tersebut. Analisis akan dilakukan dengan menggunakan metode regresi untuk mengukur sejauh mana variabilitas PDRB dapat dijelaskan oleh variabel ekspor. Data yang digunakan dalam penelitian ini melibatkan data ekspor dan PDRB Provinsi Aceh selama periode tertentu.</p>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan Masalah</h3>
+<p>Berdasarkan latar belakang dan ruang lingkup di atas, rumusan masalah penelitian ini adalah:</p>
+<p>Seberapa besar pengaruh ekspor terhadap pertumbuhan PDRB di Provinsi Aceh? Apakah terdapat hubungan positif antara ekspor dan PDRB di Provinsi Aceh? Bagaimana dinamika pengaruh tersebut dalam periode waktu tertentu?</p>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan Manfaat Penelitian</h3>
+<p>Tujuan dari penelitian ini adalah:</p>
+<p>Untuk menganalisis sejauh mana ekspor berkontribusi terhadap pertumbuhan ekonomi, diukur dengan PDRB, di Provinsi Aceh. Mengevaluasi apakah terdapat hubungan positif antara ekspor dan PDRB di Provinsi Aceh. Mmahami dinamika dan pola pengaruh ekspor terhadap PDRB dalam rentang waktu tertentu.</p>
+</section>
+<section id="package" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="package"><span class="header-section-number">1.5</span> Package</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ggplot2"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"dplyr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="studi-pustaka" class="level3" data-number="1.6">
+<h3 data-number="1.6" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">1.6</span> Studi Pustaka</h3>
+<p>Studi pustaka akan mencakup tinjauan literatur terkait konsep ekspor, PDRB, dan hubungan antara keduanya. Beberapa penelitian terdahulu yang telah dilakukan mengenai dinamika ekonomi regional, terutama di Indonesia, akan menjadi landasan teoritis untuk menjelaskan hubungan antara ekspor dan pertumbuhan ekonomi. Selain itu, literatur terkait faktor-faktor eksternal yang memengaruhi ekspor dan PDRB juga akan diintegrasikan untuk memberikan pandangan komprehensif dalam konteks Provinsi Aceh.</p>
+<p>Penelitian ekonomi internasional telah mengemukakan berbagai teori yang menjelaskan hubungan antara ekspor dan pertumbuhan ekonomi. Teori-teori seperti Teori Heckscher-Ohlin, Model Solow, dan Model Pertumbuhan Endogen memberikan landasan konseptual untuk memahami bagaimana kegiatan ekspor dapat memengaruhi perkembangan ekonomi suatu wilayah. Faktor-faktor yang memengaruhi kinerja ekspor suatu daerah merupakan aspek penting dalam memahami dinamika perdagangan internasional. Faktor-faktor seperti kebijakan perdagangan, stabilitas politik, infrastruktur, dan inovasi teknologi memainkan peran kunci dalam menentukan tingkat keberhasilan ekspor suatu wilayah.</p>
+</section>
+<section id="metode-penelitian" class="level3" data-number="1.7">
+<h3 data-number="1.7" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">1.7</span> Metode Penelitian</h3>
+</section>
+<section id="data" class="level3" data-number="1.8">
+<h3 data-number="1.8" class="anchored" data-anchor-id="data"><span class="header-section-number">1.8</span> Data</h3>
+<p>Tahun | Ekspor (X) || PDRB (Y) |</p>
+<p>|———-|————-||————-| | 2016 | 56.069.045 || 87.615.142 | | 2017 | 146.735.786 || 93.353.828 | | 2018 | 250.735.059 || 99.822.797 | | 2019 | 317.684.911 || 105.109.395 | | 2020 | 300.421. 290|| 100.524.146 |</p>
+<p>Data yang digunakan sebagai fokus penelitian adalah data ekspor dan PDRB Provinsi Aceh, diukur dalam satuan USD (Dolar Amerika). Data ini memberikan gambaran mengenai nilai ekspor dan Produk Domestik Regional Bruto (PDRB) dalam mata uang internasional, yang relevan untuk mengevaluasi kinerja ekonomi Provinsi Aceh.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"readxl"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dat<span class="ot">&lt;-</span><span class="fu">read_excel</span>(<span class="st">"Aceh.xlsx"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dat)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 3
+  Tahun    Ekspor      PDRB
+  &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;
+1  2016  56069045  87615142
+2  2017 146735786  93353828
+3  2018 250735059  99822797
+4  2019 317684911 105109395
+5  2020 300421290 100524146</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ggplot2"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"dplyr"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>dat,<span class="fu">aes</span>(<span class="at">x=</span>Ekspor,<span class="at">y=</span>PDRB))<span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">color=</span><span class="st">"purple"</span>,<span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"Tabel Pengaruh Ekspor Terhadap PDRB"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">x=</span><span class="st">"Ekspor"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">y=</span><span class="st">"PDRB"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a> <span class="at">caption=</span><span class="st">"sumber:Badan Pusat Statistik"</span>)<span class="sc">+</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>     <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="metode-analisis" class="level3" data-number="1.9">
+<h3 data-number="1.9" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">1.9</span> Metode Analisis</h3>
+<p>Data yang digunakan sebagai fokus penelitian adalah data ekspor dan PDRB Provinsi Aceh, diukur dalam satuan USD (Dolar Amerika). Data ini memberikan gambaran mengenai nilai ekspor dan Produk Domestik Regional Bruto (PDRB) dalam mata uang internasional, yang relevan untuk mengevaluasi kinerja ekonomi Provinsi Aceh</p>
+<p><span class="math display">\[
+y_{t}=\beta_0 + \beta_1 x_t+\mu_t
+\]</span> di mana <span class="math inline">\(y_t\)</span> adalah PDRB dan <span class="math inline">\(x_t\)</span> adalah Ekspor.’</p>
+<p>Dalam penelitian ini, metode analisis yang digunakan adalah regresi univariat atau Ordinary Least Square (OLS) dengan satu variabel independen. Tujuan penelitian adalah untuk mengevaluasi hubungan antara Ekspor (variabel X) dan PDRB Produk Domestik Regional Bruto ( variabel Y) di Provinsi Aceh. Analisis dilakukan dengan memanfaatkan model regresi linier sederhana untuk menentukan sejauh mana PDRB dapat menjelaskan variasi dalam nilai Ekspor. Metode ini bertujuan untuk mengidentifikasi dan mengukur pengaruh PDRB terhadap Ekspor serta memprediksi nilai Ekspor berdasarkan perubahan dalam PDRB.</p>
+</section>
+<section id="pembahasan" class="level3" data-number="1.10">
+<h3 data-number="1.10" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">1.10</span> Pembahasan</h3>
+</section>
+<section id="pembahasan-masalah" class="level3" data-number="1.11">
+<h3 data-number="1.11" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">1.11</span> Pembahasan Masalah</h3>
+<p>Analisis regresi yang Anda lakukan bertujuan untuk mengevaluasi pengaruh PDRB terhadap ekspor di Provinsi Aceh. Dalam konteks ini, terdapat beberapa poin penting yang dapat dibahas:</p>
+<p>1.Intercept - Nilai intercept adalah -1.333e+09. Ini adalah nilai Ekspor ketika PDRB sama<br>
+dengan nol. - Interpretasi: Ketika PDRB di Provinsi Aceh nol, nilai Ekspor diperkirakan<br>
+mencapai -1.333e+09.</p>
+<ol start="2" type="1">
+<li>Koefisien PDRB
+<ul>
+<li>Koefisien PDRB adalah 1.590e+01. Ini menunjukkan perubahan dalam Ekspor yang diharapkan untuk setiap satuan perubahan dalam PDRB.</li>
+<li>Interpretasi: Untuk setiap satu unit kenaikan PDRB, Ekspor diperkirakan akan meningkat sebesar 15.90.</li>
+</ul></li>
+<li>P-value
+<ul>
+<li>P-value untuk koefisien PDRB adalah 0.00277. P-value ini kurang dari tingkat signifikansi umum (0.05).</li>
+<li>Interpretasi: P-value yang rendah menunjukkan bahwa terdapat bukti yang cukup untuk menolak hipotesis nol, yang berarti bahwa PDRB memiliki pengaruh signifikan terhadap Ekspor.</li>
+</ul></li>
+<li>R-squared dan Adjusted R-squared
+<ul>
+<li>R-squared adalah 0.9653, sedangkan Adjusted R-squared adalah 0.9537.</li>
+<li>Interpretasi: R-squared menyatakan bahwa sekitar 96.53% variabilitas dalam variabel respons (Ekspor) dapat dijelaskan oleh variabel prediktor (PDRB) dalam model ini. Adjusted R-squared memperhitungkan jumlah variabel prediktor dan dapat memberikan gambaran yang lebih akurat tentang sejauh mana model dapat menjelaskan variasi.</li>
+</ul></li>
+<li>F-statistic dan P-value F-statistic
+<ul>
+<li>F-statistic adalah 83.46 dan P-value untuk F-statistic adalah 0.002772.</li>
+<li>Interpretasi: F-statistic digunakan untuk menguji signifikansi keseluruhan model.P-value yang rendah menunjukkan bahwa model regresi secara keseluruhan Signifikan. Dengan kata lain, terdapat cukup bukti untuk menyatakan bahwa setidaknya satu variabel prediktor memiliki pengaruh signifikan terhadap variabel respons.</li>
+</ul></li>
+</ol>
+</section>
+<section id="analisis-pembahasan" class="level3" data-number="1.12">
+<h3 data-number="1.12" class="anchored" data-anchor-id="analisis-pembahasan"><span class="header-section-number">1.12</span> Analisis Pembahasan</h3>
+<p>Hasil regresi nya adalah :</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>reg1<span class="ot">&lt;-</span><span class="fu">lm</span>(Ekspor<span class="sc">~</span>PDRB,<span class="at">data=</span>dat)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(reg1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = Ekspor ~ PDRB, data = dat)
+
+Residuals:
+        1         2         3         4         5 
+ -4461169  -5067596  -3956561 -21089466  34574792 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)   
+(Intercept) -1.333e+09  1.697e+08  -7.855  0.00430 **
+PDRB         1.590e+01  1.741e+00   9.136  0.00277 **
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 23810000 on 3 degrees of freedom
+Multiple R-squared:  0.9653,    Adjusted R-squared:  0.9537 
+F-statistic: 83.46 on 1 and 3 DF,  p-value: 0.002772</code></pre>
+</div>
+</div>
+<p>Berdasarkan analisis regresi linier yang dilakukan, ditemukan bahwa terdapat hubungan yang signifikan antara Produk Domestik Regional Bruto (PDRB) dan Ekspor di Provinsi Aceh. Hasil regresi menunjukkan bahwa intercept (nilai Ekspor ketika PDRB sama dengan nol) sebesar -1.333e+09, dan koefisien PDRB adalah 15.90. P-value untuk koefisien PDRB adalah 0.00277, yang lebih kecil dari tingkat signifikansi 0.05, menunjukkan bahwa PDRB memiliki pengaruh signifikan terhadap Ekspor. Dengan R-squared sebesar 0.9653 dan Adjusted R-squared sebesar 0.9537, model regresi mampu menjelaskan sekitar 96.53% variabilitas dalam variabel Ekspor. F-statistic yang signifikan (83.46, p-value: 0.002772) mengindikasikan bahwa model secara keseluruhan memberikan kontribusi yang signifikan terhadap menjelaskan variasi Ekspor.</p>
+</section>
+<section id="kesimpulan" class="level3" data-number="1.13">
+<h3 data-number="1.13" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">1.13</span> Kesimpulan</h3>
+<p>Kesimpulan umum dari analisis regresi menunjukkan bahwa terdapat hubungan yang signifikan antara variabel ekspor dan PDRB di Provinsi Aceh. Pengaruh signifikan ini dapat dilihat dari koefisien regresi PDRB yang positif sebesar 15.90 dan p-value yang rendah (0.00277). Koefisien positif menandakan bahwa adanya kenaikan dalam PDRB Provinsi Aceh berdampak positif terhadap ekspor, dan hasil uji statistik memberikan keyakinan bahwa hubungan ini bukanlah kebetulan semata.</p>
+<p>Seberapa besar pengaruh ekspor terhadap PDRB dapat diukur dari koefisien regresi PDRB sebesar 15.90. Artinya, setiap satu unit peningkatan dalam PDRB di Provinsi Aceh diikuti oleh peningkatan sekitar 15.90 unit dalam ekspor. Selain itu, R-squared sebesar 0.9653 menunjukkan bahwa sekitar 96.53% variasi PDRB dapat dijelaskan oleh variabilitas ekspor dalam model ini. Hal ini mengindikasikan bahwa model regresi dengan variabel PDRB mampu dengan baik menjelaskan fluktuasi ekspor di Provinsi Aceh.</p>
+<p>Dalam konteks hubungan positif antara ekspor dan pertumbuhan PDRB, koefisien positif pada variabel PDRB menggambarkan bahwa, secara umum, ketika PDRB meningkat, ekspor juga cenderung meningkat, dan sebaliknya. Dengan kata lain, pertumbuhan ekonomi, yang tercermin dalam PDRB, beriringan dengan peningkatan dalam aktivitas ekspor di Provinsi Aceh. Keseluruhan, hasil analisis regresi memberikan landasan yang kuat untuk menyimpulkan bahwa ekspor memiliki peran yang signifikan dalam memengaruhi pertumbuhan ekonomi di wilayah tersebut.</p>
+</section>
+<section id="referensi" class="level3" data-number="1.14">
+<h3 data-number="1.14" class="anchored" data-anchor-id="referensi"><span class="header-section-number">1.14</span> Referensi</h3>
+<p>Prishardoyo, B. (2008). Analisis Tingkat Pertumbuhan Ekonomi dan Potensi Ekonomi Terhadap Produk Domestik Regional Bruto (PDRB) Kabupaten Pati Tahun 2000-2005. Jejak, 1(1).</p>
+<p>Afriamah, A., Lubis, Z., &amp; Lubis, M. M. (2021). Faktor-faktor yang Mempengaruhi Volume Ekspor Kopi dari Kabupaten Aceh Tengah ke Amerika Serikat. Jurnal Agriuma, 3(1), 1-8.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
