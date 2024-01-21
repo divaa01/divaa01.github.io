@@ -47,13 +47,13 @@ library("dplyr")
 ```
 
 
-### Studi Pustaka
+## Studi Pustaka
 
 Studi pustaka akan mencakup tinjauan literatur terkait konsep ekspor, PDRB, dan hubungan antara keduanya. Beberapa penelitian terdahulu yang telah dilakukan mengenai dinamika ekonomi regional, terutama di Indonesia, akan menjadi landasan teoritis untuk menjelaskan hubungan antara ekspor dan pertumbuhan ekonomi. Selain itu, literatur terkait faktor-faktor eksternal yang memengaruhi ekspor dan PDRB juga akan diintegrasikan untuk memberikan pandangan komprehensif dalam konteks Provinsi Aceh.
 
 Penelitian ekonomi internasional telah mengemukakan berbagai teori yang menjelaskan hubungan antara ekspor dan pertumbuhan ekonomi. Teori-teori seperti Teori Heckscher-Ohlin, Model Solow, dan Model Pertumbuhan Endogen memberikan landasan konseptual untuk memahami bagaimana kegiatan ekspor dapat memengaruhi perkembangan ekonomi suatu wilayah. Faktor-faktor yang memengaruhi kinerja ekspor suatu daerah merupakan aspek penting dalam memahami dinamika perdagangan internasional. Faktor-faktor seperti kebijakan perdagangan, stabilitas politik, infrastruktur, dan inovasi teknologi memainkan peran kunci dalam menentukan tingkat keberhasilan ekspor suatu wilayah.
 
-### Metode Penelitian 
+## Metode Penelitian 
 
 ### Data
 
@@ -99,7 +99,7 @@ $$ di mana $y_t$ adalah PDRB dan $x_t$ adalah Ekspor.'
 
 Dalam penelitian ini, metode analisis yang digunakan adalah regresi univariat atau Ordinary Least Square (OLS) dengan satu variabel independen. Tujuan penelitian adalah untuk mengevaluasi hubungan antara Ekspor (variabel X) dan PDRB Produk Domestik Regional Bruto ( variabel Y) di Provinsi Aceh. Analisis dilakukan dengan memanfaatkan model regresi linier sederhana untuk menentukan sejauh mana PDRB dapat menjelaskan variasi dalam nilai Ekspor. Metode ini bertujuan untuk mengidentifikasi dan mengukur pengaruh PDRB terhadap Ekspor serta memprediksi nilai Ekspor berdasarkan perubahan dalam PDRB.
 
-### Pembahasan
+## Pembahasan
 
 ### Pembahasan Masalah
 Analisis regresi yang Anda lakukan bertujuan untuk mengevaluasi pengaruh PDRB terhadap ekspor di Provinsi Aceh. Dalam konteks ini, terdapat beberapa poin penting yang dapat dibahas:
@@ -141,7 +141,7 @@ summary(reg1)
 
 Berdasarkan analisis regresi linier yang dilakukan, ditemukan bahwa terdapat hubungan yang signifikan antara Produk Domestik Regional Bruto (PDRB) dan Ekspor di Provinsi Aceh. Hasil regresi menunjukkan bahwa intercept (nilai Ekspor ketika PDRB sama dengan nol) sebesar -1.333e+09, dan koefisien PDRB adalah 15.90. P-value untuk koefisien PDRB adalah 0.00277, yang lebih kecil dari tingkat signifikansi 0.05, menunjukkan bahwa PDRB memiliki pengaruh signifikan terhadap Ekspor. Dengan R-squared sebesar 0.9653 dan Adjusted R-squared sebesar 0.9537, model regresi mampu menjelaskan sekitar 96.53% variabilitas dalam variabel Ekspor. F-statistic yang signifikan (83.46, p-value: 0.002772) mengindikasikan bahwa model secara keseluruhan memberikan kontribusi yang signifikan terhadap menjelaskan variasi Ekspor.
 
-### Kesimpulan
+## Kesimpulan
 
 Kesimpulan umum dari analisis regresi menunjukkan bahwa terdapat hubungan yang signifikan antara variabel ekspor dan PDRB di Provinsi Aceh. Pengaruh signifikan ini dapat dilihat dari koefisien regresi PDRB yang positif sebesar 15.90 dan p-value yang rendah (0.00277). Koefisien positif menandakan bahwa adanya kenaikan dalam PDRB Provinsi Aceh berdampak positif terhadap ekspor, dan hasil uji statistik memberikan keyakinan bahwa hubungan ini bukanlah kebetulan semata.
 
@@ -149,7 +149,7 @@ Seberapa besar pengaruh ekspor terhadap PDRB dapat diukur dari koefisien regresi
 
 Dalam konteks hubungan positif antara ekspor dan pertumbuhan PDRB, koefisien positif pada variabel PDRB menggambarkan bahwa, secara umum, ketika PDRB meningkat, ekspor juga cenderung meningkat, dan sebaliknya. Dengan kata lain, pertumbuhan ekonomi, yang tercermin dalam PDRB, beriringan dengan peningkatan dalam aktivitas ekspor di Provinsi Aceh. Keseluruhan, hasil analisis regresi memberikan landasan yang kuat untuk menyimpulkan bahwa ekspor memiliki peran yang signifikan dalam memengaruhi pertumbuhan ekonomi di wilayah tersebut.
 
-### Referensi
+## Referensi
 
 Prishardoyo, B. (2008). Analisis Tingkat Pertumbuhan Ekonomi dan Potensi Ekonomi Terhadap Produk Domestik Regional Bruto (PDRB) Kabupaten Pati Tahun 2000-2005. Jejak, 1(1).
 
