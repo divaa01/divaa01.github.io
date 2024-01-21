@@ -57,13 +57,14 @@ Penelitian ekonomi internasional telah mengemukakan berbagai teori yang menjelas
 
 ### Data
 
-| Tahun    |  Ekspor (X) ||  PDRB (Y)   |
-|----------|-------------||-------------|
-|    2016  | 56.069.045  || 87.615.142  |
-|    2017  | 146.735.786 || 93.353.828  |
-|    2018  | 250.735.059 || 99.822.797  |
-|    2019  | 317.684.911 || 105.109.395 |
-|    2020  | 300.421. 290|| 100.524.146 |
+
+| Tahun    |  Ekspor (X) |  PDRB (Y)   |
+|----------|-------------|-------------|
+|    2016  | 56.069.045  | 87.615.142  |
+|    2017  | 146.735.786 | 93.353.828  |
+|    2018  | 250.735.059 | 99.822.797  |
+|    2019  | 317.684.911 | 105.109.395 |
+|    2020  | 300.421. 290| 100.524.146 |
 
 
 Data yang digunakan sebagai fokus penelitian adalah data ekspor dan PDRB Provinsi Aceh, diukur dalam satuan USD (Dolar Amerika). Data ini memberikan gambaran mengenai nilai ekspor dan Produk Domestik Regional Bruto (PDRB) dalam mata uang internasional, yang relevan untuk mengevaluasi kinerja ekonomi Provinsi Aceh.
